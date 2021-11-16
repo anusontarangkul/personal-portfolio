@@ -46,13 +46,16 @@ const Navbar = () => {
     <Box
       sx={{
         paddingTop: '15px',
-        paddingLeft: '15px',
-        paddingRight: '15px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
         paddingBottom: '15px',
         display: 'flex',
         justifyContent: 'space-between',
         backgroundColor: '#E2F0F9',
-        height: '60px',
+        alignItems: 'center',
+        height: '4vh',
+        position: 'fixed',
+        width: '100vw',
       }}
     >
       <Box
@@ -66,7 +69,7 @@ const Navbar = () => {
       >
         <Typography
           sx={{
-            fontSize: '40px',
+            fontSize: '35px',
             fontWeight: '600',
             fontFamily: 'Signika Negative',
           }}
@@ -79,7 +82,7 @@ const Navbar = () => {
         className='menu-btn'
         key={'right'}
         sx={{
-          paddingRight: '5px',
+          paddingRight: '15px',
           display: { md: 'none' },
         }}
       >
@@ -87,7 +90,7 @@ const Navbar = () => {
           <MenuOutlinedIcon
             sx={{
               borderRadius: '5px',
-              height: '50px',
+              height: '40px',
               width: 'auto',
               color: 'white',
               backgroundColor: '#286FB4',

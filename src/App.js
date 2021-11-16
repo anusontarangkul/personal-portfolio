@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar.jsx';
 import Intro from './components/Intro/Intro.jsx';
+import About from './components/About/About.jsx'
 import {
   BrowserRouter,
   Routes,
@@ -13,9 +14,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Intro />} />>
+          <Route exact path="/about" element={<About />} />>
 
 
-      </Routes>
+
+
+        </Routes>
+        <About />
       </BrowserRouter>
     </div>
   );

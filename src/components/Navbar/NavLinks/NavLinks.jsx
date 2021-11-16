@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 
 const NavLinks = () => {
   return (
-    <List sx={{ display: 'flex' }}>
+    <List sx={{ display: 'flex', paddingRight: '15px' }}>
       {['About', 'Skills', 'Projects', 'Contact'].map((text, index) => (
         <ListItem button key={text}>
           <Typography

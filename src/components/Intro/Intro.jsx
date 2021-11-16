@@ -8,7 +8,7 @@ import Link from '@mui/material/Link';
 
 const Intro = () => {
   return (
-    <Container sx={{ height: '100vh' }}>
+    <Container sx={{ height: '100vh', paddingTop: '10vh' }}>
       <Typography
         variant='h1'
         sx={{
