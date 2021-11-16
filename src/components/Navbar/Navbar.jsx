@@ -65,10 +65,9 @@ const Navbar = () => {
         }}
       >
         <Typography
-          variant='h1'
           sx={{
             fontSize: '40px',
-            fontWeight: 'bold',
+            fontWeight: '600',
             fontFamily: 'Signika Negative',
           }}
         >
