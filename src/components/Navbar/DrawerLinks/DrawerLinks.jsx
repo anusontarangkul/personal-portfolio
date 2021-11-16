@@ -20,11 +20,11 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const DrawerLinks = () => {
   const data = [
-    { name: 'Home', icon: <HomeIcon /> },
-    { name: 'About', icon: <PersonIcon /> },
-    { name: 'Skills', icon: <CheckBoxIcon /> },
-    { name: 'Projects', icon: <DesktopMacIcon /> },
-    { name: 'Contact', icon: <ContactSupportIcon /> },
+    { name: 'Home', icon: <HomeIcon />, aLink: '#intro' },
+    { name: 'About', icon: <PersonIcon />, aLink: '#about' },
+    { name: 'Skills', icon: <CheckBoxIcon />, aLink: '#skills' },
+    { name: 'Projects', icon: <DesktopMacIcon />, aLink: '#projects' },
+    { name: 'Contact', icon: <ContactSupportIcon />, aLink: '#contact' },
   ];
 
   const dataLinks = [
@@ -36,11 +36,13 @@ const DrawerLinks = () => {
     <>
       <List sx={{ fontSize: '1rem' }}>
         {data.map((text, index) => (
-          <ListItem button key={text.name}>
-            <ListItemIcon sx={{ color: 'black' }}>{text.icon}</ListItemIcon>
+          <a href={text.aLink} style={{ textDecoration: 'none' }}>
+            <ListItem button key={text.name}>
+              <ListItemIcon sx={{ color: 'black' }}>{text.icon}</ListItemIcon>
 
-            <ListItemText primary={text.name} sx={{ color: 'black' }} />
-          </ListItem>
+              <ListItemText primary={text.name} sx={{ color: 'black' }} />
+            </ListItem>
+          </a>
         ))}
       </List>
       <Divider />

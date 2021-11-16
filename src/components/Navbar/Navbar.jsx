@@ -83,6 +83,7 @@ const Navbar = () => {
         key={'right'}
         sx={{
           paddingRight: '15px',
+
           display: { md: 'none' },
         }}
       >
@@ -94,6 +95,7 @@ const Navbar = () => {
               width: 'auto',
               color: 'white',
               backgroundColor: '#286FB4',
+              boxShadow: '0 5px 10px rgb(0 0 0 / 0.2)',
             }}
           />
         </Button>
