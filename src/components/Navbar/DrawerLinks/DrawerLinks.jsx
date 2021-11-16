@@ -28,9 +28,22 @@ const DrawerLinks = () => {
   ];
 
   const dataLinks = [
-    { name: 'GitHub', icon: <GitHubIcon /> },
-    { name: 'LinkedIn', icon: <LinkedInIcon /> },
-    { name: 'YouTube', icon: <YouTubeIcon /> },
+    {
+      name: 'GitHub',
+      icon: <GitHubIcon />,
+      aLink: 'https://github.com/anusontarangkul',
+    },
+    {
+      name: 'LinkedIn',
+      icon: <LinkedInIcon />,
+      aLink: 'https://www.linkedin.com/in/anusontarangkul/',
+    },
+    {
+      name: 'YouTube',
+      icon: <YouTubeIcon />,
+      aLink:
+        'https://www.youtube.com/channel/UCYBwball06AdVuaHeH7adVw?view_as=subscriber',
+    },
   ];
   return (
     <>
@@ -48,11 +61,17 @@ const DrawerLinks = () => {
       <Divider />
       <List sx={{ fontSize: '1rem' }}>
         {dataLinks.map((text, index) => (
-          <ListItem button key={text.name}>
-            <ListItemIcon sx={{ color: 'black' }}>{text.icon}</ListItemIcon>
+          <a
+            href={text.aLink}
+            target='to_blank'
+            style={{ textDecoration: 'none' }}
+          >
+            <ListItem button key={text.name}>
+              <ListItemIcon sx={{ color: 'black' }}>{text.icon}</ListItemIcon>
 
-            <ListItemText primary={text.name} sx={{ color: 'black' }} />
-          </ListItem>
+              <ListItemText primary={text.name} sx={{ color: 'black' }} />
+            </ListItem>
+          </a>
         ))}
       </List>
       <Divider />
