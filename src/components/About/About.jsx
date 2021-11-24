@@ -32,7 +32,7 @@ const About = () => {
             style={{ borderRadius: '50%', width: 'auto', height: 'auto' }}
           />
         </Box>
-        <Box
+        <Container
           sx={{
             width: { xs: '100%', md: '50%' },
             paddingLeft: '5px',
@@ -70,7 +70,7 @@ const About = () => {
             work as a <i>Learner Assistant</i> for the bootcamp where I tutor
             the fundamentals of web development.
           </Typography>
-        </Box>
+        </Container>
       </Box>
     </Container>
   );
