@@ -17,7 +17,7 @@ const About = () => {
       >
         About
       </Typography>
-      <Box sx={{ display: { md: 'flex' }, marginTop: '30px' }}>
+      <Box sx={{ display: { md: 'flex' }, margin: '30px' }}>
         <Box
           sx={{
             width: { xs: '100%', md: '50%' },

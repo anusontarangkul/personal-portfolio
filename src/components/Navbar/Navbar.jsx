@@ -56,6 +56,7 @@ const Navbar = () => {
         height: '4vh',
         position: 'fixed',
         width: '100vw',
+        zIndex: 100,
       }}
     >
       <Box

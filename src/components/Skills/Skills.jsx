@@ -5,7 +5,7 @@ import Carousel from './Carousel/Carousel';
 
 const Skills = () => {
   return (
-    <Container id='skills'>
+    <Container id='skills' sx={{ paddingTop: '10vh', height: '100vh' }}>
       <Typography
         variant='h2'
         sx={{
