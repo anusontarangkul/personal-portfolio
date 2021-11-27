@@ -25,6 +25,11 @@
 .carousel-slider {
   height: 450px;
 }
+
+.thumb {
+  width: '100px' !important;
+}
+
 /* .selected {
   display: flex !important;
   align-content: center;
